@@ -7,9 +7,6 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends Activity {
-    public static final int REQUEST_CODE_PROVERB = 101;
-    public static final int REQUEST_CODE_LIONSTRING = 102;
-    public static final int REQUEST_CODE_LIST = 103;
     Button button, button2, button3;
 
     @Override
@@ -24,7 +21,7 @@ public class MainActivity extends Activity {
                 String proverb = proverbString();
                 Intent intent = new Intent(getApplicationContext(), ProverbActivity.class);
                 intent.putExtra("proverbString", proverb);
-                startActivityForResult(intent, REQUEST_CODE_PROVERB);
+                startActivity(intent);
             }
         });
         button2 = findViewById(R.id.button2);
@@ -34,7 +31,7 @@ public class MainActivity extends Activity {
                 String lion = lionString();
                 Intent intent = new Intent(getApplicationContext(), LionActivity.class);
                 intent.putExtra("lionString", lion);
-                startActivityForResult(intent, REQUEST_CODE_LIONSTRING);
+                startActivity(intent);
             }
         });
         button3 = findViewById(R.id.button3);
@@ -42,7 +39,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), ListActivity.class);
-                startActivityForResult(intent, REQUEST_CODE_LIST);
+                startActivity(intent);
             }
         });
     }
@@ -79,6 +76,7 @@ public class MainActivity extends Activity {
 //        dialog.show();
 //    }
 
+    //SQlite로 옮길것
     public String proverbString(){
         String[] proverb = {"*가는 날이 장날이다*", "*가는 말이 고와야 오는 말이 곱다*", "*가랑비에 옷 젖는 줄 모른다*", "*가랑잎이 솔잎더러 바스락거린다고 한다*", "*가재는 게 편이라*",
                             "*가지 많은 나무에 바람 잘 날 없다*", "*강건너 불구경*", "*계란으로 바위치기*", "*엎친데 덮친격*", "*싼 게 비지떡*",

@@ -55,8 +55,6 @@ public class ListActivity extends Activity {
             db.execSQL("CREATE TABLE IF NOT EXISTS " + tableName
             + " (proverb VARCHAR(256));");
 
-            db.execSQL("DELETE FROM " + tableName);
-
             for(int i=0; i<proverbString.length; i++){
                 db.execSQL("INSERT INTO " + tableName
                         + "(proverb) Values ('" + proverbString[i] + "');");

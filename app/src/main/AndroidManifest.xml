@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TodayIs">
         <activity android:name=".LionActivity"></activity>
+        <activity android:name=".ListAddActivity"/>
         <activity android:name=".ProverbActivity"/>
         <activity android:name=".ListActivity"/>
         <activity android:name=".MainActivity">

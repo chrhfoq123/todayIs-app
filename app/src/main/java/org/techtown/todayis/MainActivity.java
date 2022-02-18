@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+//MainActivity에서 랜덤하게 뽑아오는걸 db에서 뽑아오게 수정
 public class MainActivity extends Activity {
     Button button, button2, button3, button4;
 

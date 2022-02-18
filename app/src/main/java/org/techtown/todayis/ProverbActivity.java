@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+//MainActivity에서 랜덤하게 뽑아오는걸 db에서 뽑아오게 수정
 public class ProverbActivity extends Activity {
 
     @Override

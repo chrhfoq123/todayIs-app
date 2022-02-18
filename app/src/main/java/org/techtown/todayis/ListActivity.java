@@ -20,9 +20,10 @@ import java.sql.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+//listadd클래스에서 add한것을 보여주기만 하게 수정
 public class ListActivity extends Activity {
     String dbName = "listDB";
-    String tableName = "listtable";
+    String tableName = "listTable";
     String sql;
     SQLiteDatabase db;
     Cursor cs;
@@ -46,18 +47,18 @@ public class ListActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        listView = findViewById(R.id.list);
+        /*listView = findViewById(R.id.list);
         proverbList = new ArrayList<>();
 
         try{
             db = this.openOrCreateDatabase(dbName, 0, null);
 
             db.execSQL("CREATE TABLE IF NOT EXISTS " + tableName
-            + " (proverb VARCHAR(256));");
+            + " (category VARCHAR(50), proverb VARCHAR(256));");
 
             for(int i=0; i<proverbString.length; i++){
                 db.execSQL("INSERT INTO " + tableName
-                        + "(proverb) Values ('" + proverbString[i] + "');");
+                        + "(categroy, proverb) Values ('" + proverbString[i] + "');");
             }
 
         }catch(SQLiteException se){
@@ -81,6 +82,6 @@ public class ListActivity extends Activity {
             listView.setAdapter(adapter);
         }catch (Exception e){
             System.out.println("Select Error: " + e);
-        }
+        }*/
     }
 }

@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
-//디비 인서트 클래스(리스트로 보내기만 하면될듯)
 public class ListAddActivity extends Activity {
     SQliteActivity sql;
     Button sent, back;

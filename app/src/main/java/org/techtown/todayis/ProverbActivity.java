@@ -2,6 +2,8 @@ package org.techtown.todayis;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,6 +11,7 @@ import android.widget.TextView;
 
 //MainActivity에서 랜덤하게 뽑아오는걸 db에서 뽑아오게 수정
 public class ProverbActivity extends Activity {
+    MainActivity mainActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
